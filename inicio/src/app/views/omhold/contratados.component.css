@@ -1,0 +1,83 @@
+*{
+    color:black;
+    margin-bottom: 0rem;
+    margin-top: 0px;
+}
+.fomrs{
+    margin-bottom: 0rem;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    padding: 2%;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    box-shadow: 2px 2px 8px 4px rgba(217, 217, 217, 0.5);
+}
+
+#row1 {
+    margin: 2% 0 0 0;
+}
+
+#datadiv {
+    width: 30%;
+}
+
+#idVaga {
+    width: 20%;
+    margin: 0;
+}
+
+#nome {
+    width: 50%;
+}
+
+
+.col-7{
+    width: 40%;
+}
+
+
+.col-1{
+    width: 70%;
+}
+
+
+
+#icons{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-6{
+    width: 40%;
+    display: flex;
+    
+}
+
+button {
+    width: 45%;
+    height: 100%;
+    font-size: 20px;
+    margin-left: 25%;
+    border-radius: 10%;
+}
+
+@media (max-width: 500px) {
+
+    #row1 {
+      flex-direction: column;
+    }
+  
+    #datadiv, #nome {
+      width: 100%;
+  
+    }
+  
+    .col-6 {
+      width: 100%;
+    }
+  }

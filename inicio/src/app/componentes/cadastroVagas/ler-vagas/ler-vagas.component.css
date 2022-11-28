@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,400&display=swap");
+
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+.caixa {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 1%;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px 4px rgba(64, 61, 78, 0.1);
+  background-image: linear-gradient(
+    90deg,
+    rgba(47, 43, 57, 1) 0%,
+    rgba(40, 36, 50, 1) 44%,
+    rgba(40, 36, 50, 1) 100%
+  
+  );
+  
+}
+.cartao {
+  width: 250px;
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #3e3c47;
+  margin-left: 20px;
+  box-shadow: 2px 2px 8px 4px rgba(78, 135, 180, 0.28);
+
+}
+
+#card {
+  border: none;
+  background-color: #3e3c47;
+  border: 1px outset blueviolet;
+}
+
+.card-header {
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: blueviolet;  
+}
+
+.card-body {
+  margin-bottom: 0px;
+  margin: 20px;
+  box-shadow: 2px 2px 8px 4px rgba(62, 60, 71, 0.28);}
+
+.card-footer {
+  margin: 20px;
+}
+
+.btn{
+  background-color: #3E3C47;
+  opacity: 0.5;
+  border: none;
+}
+
+.btn:hover{
+  background-color: blueviolet;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+
+
+@media (max-width: 1780px) {
+  .cartao {
+    margin: 25px;
+  }
+  .caixa {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1444px) {
+  .cartao {
+    width: 250px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1290px) {
+  .cartao {
+    width: 280px;
+  }
+  .caixa {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cartao {
+    width: 300px;
+    height: 495px;
+    place-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .cartao{
+    width: 44vw;
+    height: 33vh;
+  }
+
+  .card-body {
+    margin: -4px;
+  }
+  
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,400&display=swap");
+
+* {
+  padding: 5px 10px 1rem 10px;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  border-radius: 10px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.caixa {
+  display: flex;
+}
+
+.modalidadeVaga {
+  width: 45%;
+  margin-right: 4%;
+}
+
+.localidade {
+  width: 26.5%;
+  margin-right: 1%;
+}
+
+.alocacao {
+  width: 26.5%;
+}
+
+.box {
+  margin-top: 2%;
+  padding: 1%;
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.BtnCadastrarCancelar {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-left: 47%;
+  width: 50%;
+}
+
+.outer-wrap{
+  display: flex;
+  width: max-content;
+  justify-content: space-around;
+}
+
+
+.skill{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.skilltxt{
+  width: 400px;
+  text-transform: capitalize;
+  padding: 0 10px;
+  transition: 0.5s;
+  border: 1px solid #424242;
+}
+
+input.skilltxt:focus,
+input.skilltxt:valid{
+  box-shadow: 0px 0px 4px 2px #424242;  
+  border-radius: 0;
+  outline: 0;
+}
+
+.txtbtn{
+  padding: 0 10px;
+}
+
+input#botao1{
+  border: 1px solid #424242;
+  transition: 0.5s;
+}
+
+
+.txtbtn input#botao1{
+  border-radius: 0;
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+}
+
+input#botao1:hover{
+  box-shadow: 0px 0px 4px 2px #424242; 
+}
+
+
+ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  align-items: center;
+  margin-right: 10px;
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  align-items: center;
+  padding: 5px;
+  width:max-content;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+i{
+  letter-spacing: 1px; 
+  padding: 0;
+}
+.listahs span{
+  display: flex;
+  padding: 0;
+  width: 20px;
+  height: 2px;
+  background: red;
+  cursor: pointer;
+}
+
+.listahs{
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul span:nth-child(2){
+transform: translate(10px, 5px) rotate(-45deg);
+}
+
+ul span:nth-child(3){
+  transform: translate(-10px, 5px) rotate(45deg);
+}
+
+button {
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: #231825;
+  color: #f1f1f1;
+
+} 
+
+.de:hover{
+  opacity: 0.8;
+  background-color:darkred;
+  transition: 0.5s;
+}
+
+.c{
+
+}
+
+.ca{
+
+}
+
+
+
+/*Responsividade*/
+@media (max-width: 1090px) {
+  .box {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caixa {
+    display: block;
+  }
+
+  @media (max-width: 500px) {
+    button {
+      padding: 2px;
+      width: 100%;
+      margin-left: 0rem;
+    }
+    .skilltxt {
+      width: 18vw;
+    } .skill {
+      justify-content: flex-start;
+      
+    } .listahs {
+      width: 280px;
+    }
+    
+  }
+}
+

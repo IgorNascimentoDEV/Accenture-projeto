@@ -1,0 +1,69 @@
+<!-- <button>
+    
+    <p>CONTRATADOS</p>
+</button> -->
+
+<article class="corpo">
+    <div class="identificacao">
+        <input class="info" id="data" [value]="candidato.dataEntrevista" name="dataEntrevista" disabled />
+        <input class="info" id="nome" [value]="candidato.nome" name="nome" disabled /> 
+    </div>
+    <div class="skills">
+        <textarea class="skill" cols="15" rows="8" placeholder="Soft Skills" wrap="hard" [(ngModel)]="candidato.softSkills" name="sofSkills"></textarea>
+    </div>
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+
+  
+        <div class="inputbox">
+        <form [formGroup]="form">
+
+          <input class="hardskil" type="text" required="required" text="#ref" formControlName="item"/>
+            <span id="sktech">Skill Técnica</span>
+            <input type="submit" id="botao1"  (click)="criaItem()">
+          </form>
+        </div>
+
+          <div class="lista" [ngClass]="cadastros.length == 0 ? 'displayEmpty' : ''">
+            <ul  *ngFor="let item of cadastros; let i = index"
+            (click)="deletarItem(i)">
+              <li 
+              > {{ item }} <i class="fa-solid fa-delete-left">
+              </i></li>
+              <span></span>
+              <span></span>
+            </ul>
+          </div>
+    </div>
+    </div>
+  
+
+    <div class="proposto">
+        <label>Definir Nivel do Candidato</label>
+        <select class="proporNivel" cols="30" rows="1" placeholder="Salário Proposto" [(ngModel)]="candidato.salario" name="salario">
+            <option selected>CL13</option>
+            <option>CL12</option>
+            <option>CL11</option>
+            <option>CL10</option>
+            <option>CL9</option>
+            <option>CL8</option>
+            <option>CL7</option>
+            <option>CL6</option>
+        </select>
+
+        <label>Definir Status do Candidato</label>
+        <select id="proporStatus" cols="30" rows="1" placeholder="Status" [(ngModel)]="candidato.status" name="status">
+        <option selected>A Entrevistar</option>
+        <option>Aprovado</option>
+        <option>Contratado</option>
+        <option>Inapto</option>
+    </select>
+    </div>
+
+   
+
+    <div class="button">
+        <button (click)="autalizarCadastro()">Finalizar Entrevista</button>
+    </div>
+</article>
+

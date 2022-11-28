@@ -1,0 +1,19 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.footer span{
+    font-size: 1 rem;
+    font-weight: 300;
+    margin-left: 10.5%;
+}
+
+.empresa{
+    color: #A100FF;
+    font-size: 13px;
+}

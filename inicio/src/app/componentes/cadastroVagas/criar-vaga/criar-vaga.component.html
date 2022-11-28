@@ -1,0 +1,97 @@
+<form class="caixa">
+  <form class="row g-3">
+    <div class="DivParaEndereco" id="Endereco">
+      <div class="row g-3 ">
+        <div class="col-sm-7 modalidadeVaga box">
+          <label for="form-control" id="LabelDoEndereco">Nome da Vaga</label>
+          <input [(ngModel)]="vaga.nomeVaga" name="nomeVaga" type="text" class="form-control"
+            placeholder="Nome da Vaga" aria-label="City" />
+        </div>
+        <div class="col-sm localidade box">
+          <label for="form-control" id="LabelDoEndereco">Localidade</label>
+          <div>
+            <input type="text" class="form-control" placeholder="Localidade" aria-label="City" [(ngModel)]="vaga.localidade" name="localidade"/>
+
+          </div>
+        </div>
+        <div class="col-sm alocacao box">
+          <label for="form-control" id="LabelDoEndereco">Tempo de Alocação</label>
+          <div>
+
+            <input type="date" class="form-control" id="inputCity" [(ngModel)]="vaga.tempoAlocacao" name="tempoAlocacao"/>
+
+          </div>
+        </div>
+        <div class="Descrição box">
+          <label for="inputZip">Descrição da Vaga</label>
+
+          <textarea class="form-control" placeholder="Descrição da Vaga" id="exampleFormControlTextarea1"
+            rows="3" [(ngModel)]="vaga.descricaoVaga" name="descricaoVaga" ></textarea>
+        </div>
+
+        <div class="idioma box">
+          <label for="form-control" id="LabelDoEndereco">Idioma</label>
+          <div class="input-group mb-3">
+
+            <button class="btn btn-outline-secondary" type="button">Adicionar Idioma</button>
+
+            <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon"
+              [(ngModel)]="vaga.idioma" name="idioma">
+              <option>Espanhol</option>
+              <option>Inglês</option>
+              <option>Francês</option>
+              <option>Português</option>
+            </select>
+            <select id="inputState" class="form-select">
+              <option>Básico</option>
+              <option>Intermediário</option>
+              <option>Avançado</option>
+              <option>Nativo</option>
+            </select>
+          </div>
+
+          <label for="form-control" id="LabelDoEndereco">Skill Técnica</label>
+          <div class="outer-wrap">
+            <div class="inner-wrap">
+              <form class="skill" [formGroup]="form">
+                <input class="skilltxt" type="text" required="required" placeholder="Adicione uma skill" text="#ref" formControlName="item"/>
+
+                <div class="txtbtn">
+
+                  <input class="skillbtn" type="submit"  (click)="criaItem()">
+
+                </div>
+                  
+                </form>
+                <div class="listahs" [ngClass]="cadastros.length == 0 ? 'displayEmpty' : ''">
+                  <ul>
+                    <li *ngFor="let item of cadastros; let i = index"
+                    (click)="deletarItem(i)"
+                    > {{ item }} <i class="fa-solid fa-delete-left"></i>
+                    <span></span>
+                    <span></span>
+                  </li>
+                  </ul>
+                </div>
+          </div>
+          </div>
+        
+        <div class="BtnCadastrarCancelar">
+          <button type="button" class="btn btn-primary btn-lg cad" id="btn1"
+            (click)="criarCadastroVagas() ">Cadastrar</button>
+          <button type="button" class="btn btn-secondary btn-lg can" id="btn2" (click)=" cancelar()">Cancelar</button>
+        </div>
+        
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"></script>
+
+    
+         
+
+
+
+
+
+        

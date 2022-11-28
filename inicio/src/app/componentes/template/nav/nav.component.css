@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  
+  overflow-y: scroll;
+  background-color: transparent;
+  border: none;
+}
+
+.navegador {
+  background-color: transparent;
+}
+
+button {
+  width: 20%;
+  height: 10%;
+  background-color: #403D4E;
+  border: none;
+  margin-top: 10%;
+  padding: 1.2rem;
+  display: flex;
+}
+
+a {
+  background-color: transparent;
+  border: none;
+}
+
+.sidenav  {
+  width: fit-content;
+  display: flex;
+  height: 55%;
+  background: transparent;
+  background-color: #403D4E;
+  border-radius: 10px;
+  padding: 0.5% 0 0 0.5%;
+  margin: 1%;
+  box-shadow: 2px 2px 8px 4px rgba(31, 31, 31, 0.09);
+  overflow: hidden;
+}
+
+.mat-list-item {
+  color: #f1f1f1;
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  text-decoration: none;
+}
+
+.def{
+  opacity: 1;
+}
+
+.def:hover{
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+
+
+.mat-drawer-container {
+  position: relative;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  display: contents;
+ 
+  
+}  
+
+
+.active-link,
+.active-link > a {
+  color: #A07EA0;
+  transform: scale(1.1);
+}
+
+.active-link-def,
+.active-link-def > a {
+  color: #A07EA0;
+  transform: scale(1.1);
+}
+
+.active-link-def > a > #contratados {
+  transform: scale(1.0);
+}
+
+
+/*Responsividade 1880px
+@media (max-width: 1880px) {
+  .sidenav {
+    margin-top: 7%;
+  }
+}
+
+/*Responsividade 1278px
+@media (max-width: 1278px) {
+  .sidenav {
+    margin-top: 10%;
+  }
+}
+
+/*Responsividade 952px
+@media (max-width: 952px) {
+  .sidenav {
+    margin-top: 13%;
+    width: 250px;
+  }
+} */

@@ -1,0 +1,200 @@
+
+<form class="caixa">
+  <form class="row g-3">
+    <div class="DivParaNomeCompleto boxEntrada">
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">
+          Nome Completo
+        </label>
+        <input [(ngModel)]="candidato.nome" name="nome"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="Nome completo"
+        />
+      </div>
+    </div>
+    <div class="DivParaEmail boxEntrada">
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">
+          Email
+        </label>
+        <input [(ngModel)]="candidato.email" name="email"
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="username2022@example.com"
+        />
+      </div>
+    </div>
+
+    <div class="DivParaEndereco boxEntrada" id="Endereco">
+      <div class="row g-3">
+        <label for="form-control" id="LabelDoEndereco">Endereço</label>
+        <div class="col-sm-7">
+          <input [(ngModel)]="candidato.pais" name="pais"
+            type="text"
+            class="form-control"
+            placeholder="País"
+            aria-label="City"
+          />
+        </div>
+        <div class="col-sm">
+          <select id="inputState" class="form-select" [(ngModel)]="candidato.estado" name="estado">
+            <option selected>Estado..</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
+        </div>
+        <div class="col-sm-7">
+          <input [(ngModel)]="candidato.cidade" name="cidade"
+            type="text"
+            class="form-control"
+            placeholder="Cidade"
+            aria-label="City"
+          />
+        </div>
+        <div class="col-sm">
+          <input [(ngModel)]="candidato.bairro" name="bairro"
+            type="text"
+            class="form-control"
+            placeholder="Bairro"
+            aria-label="State"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="DivTelefone boxEntrada">
+        <label for="inputZip">Numero</label>
+        <input type="tel" placeholder="+5519XXXXYYYY" class="form-control" [(ngModel)]="candidato.numero1" name="numero1"/>
+        <label for="inputZip">Numero</label>
+        <input type="tel" placeholder="+55119XXXXYYYY" class="form-control"[(ngModel)]="candidato.numero2" name="numero2"/>
+    </div>
+    <div class="col-md-6" class="DivNascimento boxEntrada">
+      <label for="inputCity" class="form-label">Nascimento</label>
+      <input type="date" class="form-control" id="inputCity" [(ngModel)]="candidato.nascimento" name="nascimento"/>
+      <br>
+        <label for="formFileSm" class="form-label">Anexar Documento Curricular</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+    </div>
+    <div class="col-md-6" class="DivSalario boxEntrada">
+      <label for="inputEmail4" class="form-label">Pretensão Salarial</label>
+      <input  [(ngModel)]="candidato.pretencao" name="pretencao"
+        type="text"
+        class="form-control"
+        id="inputEmail4"
+        placeholder="R$"
+      />
+        <label for="inputState" class="form-label">Nível</label>
+        <select id="inputState" class="form-select" [(ngModel)]="candidato.nivel" name="nivel"> 
+          <option selected>CL13</option>
+          <option>CL12</option>
+          <option>CL11</option>
+          <option>CL10</option>
+          <option>CL9</option>
+          <option>CL8</option>
+          <option>CL7</option>
+          <option>CL6</option>
+        </select>
+          <label for="inputState" class="form-label">Vaga</label>
+          <select id="inputState" class="form-select" [(ngModel)]="candidato.vaga" name="vaga">
+            <option selected>Programador Web..</option>
+            <option>Programador Frontend</option>
+            <option>Programador Backend</option>
+            <option>Desenvolvedor NodeJs</option>
+            <option>Desenvolvedor AngularJS</option>
+            <option>Desenvolvedor VueJS</option>
+            <option>Desenvolvedor ReactJS</option>
+            <option>Desenvolvedor ReactJS</option>
+            <option>Desenvolvedor TypeScript</option>
+            <option>Desenvolvedor Python</option>
+            <option>Desenvolvedor SQL</option>
+            <option>Desenvolvedor C</option>
+            <option>Desenvolvedor C++</option>
+            <option>Desenvolvedor C#</option>
+            <option>Desenvolvedor Ruby</option>
+            <option>Desenvolvedor Swift</option>
+            <option>Desenvolvedor Go</option>
+            <option>Desenvolvedor Cloud</option>
+            <option>Analista de Dados</option>
+            <option>Analista de Requisitos</option>
+          </select>
+          <br>
+            <label for="inputCity" class="form-label">Data da Entrevista</label>
+            <input type="datetime-local" data-form-date class="form-control" id="inputCity" [(ngModel)]="candidato.dataEntrevista" name="dataEntrevista"/>
+    </div>
+    <div class="NotasEntrada boxEntrada" id="NotasEntradaDiv">
+      <p>Notas de Avaliação</p>
+      <label for="customRange3" class="form-label">SQL</label>
+      <input [(ngModel)]="candidato.sql" name="sql"
+        type="range"
+        class="form-range"
+        min="0"
+        max="5"
+        step="1"
+        id="customRange3"
+      />
+      <label for="customRange3" class="form-label">LG</label>
+      <input [(ngModel)]="candidato.lg" name="lg"
+        type="range"
+        class="form-range"
+        min="0"
+        max="5"
+        step="0.5"
+        id="customRange3"
+      />
+      <label for="customRange3" class="form-label">EN</label>
+      <input [(ngModel)]="candidato.en" name="en"
+        type="range"
+        class="form-range"
+        min="0"
+        max="5"
+        step="0.5"
+        id="customRange3"
+      />
+    </div>
+    <div class="DescricaoCandidato boxEntrada" id="CandidatoDescricao">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Descrição Técnica</label>
+        <textarea [(ngModel)]="candidato.descri" name="descri"
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="9"
+        ></textarea>
+      </div>
+    </div>
+    <div class="BtnCadastrarCancelar">
+      <button type="button" class="btn btn-primary btn-lg" id="btn1" (click)=" autalizarCadastro()">Atualizar</button>
+      <button type="button" class="btn btn-secondary btn-lg" id="btn2" (click)=" cancelar()">Cancelar</button>
+    </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+</form>

@@ -1,0 +1,108 @@
+{
+  "candidatos": [
+    {
+      "nome": "igor",
+      "email": "diegoigor2001@gmail.com",
+      "dataEntrevista": "2022-11-25T19:20",
+      "numero1": "teste",
+      "numero2": "81 984783558",
+      "pais": "Brasil",
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "Ibura",
+      "nivel": "Senior",
+      "nascimento": "2022-02-12",
+      "pretencao": "5000000000000",
+      "vaga": "Desenvolvedor Cloud",
+      "descri": "Eu sou foda",
+      "sql": 5,
+      "lg": 5,
+      "en": 5,
+      "id": 1,
+      "softSkills": "Bora Bill",
+      "hardSkills": "Bora Fi Do Bill",
+      "salario": "Senior",
+      "status": "Aprovado"
+    },
+    {
+      "nome": "diegoigor2001@gmail.com",
+      "email": "diegoigor2001@gmail.com",
+      "dataEntrevista": "2022-11-17T22:03",
+      "numero1": "",
+      "numero2": "",
+      "pais": "Brasil",
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "",
+      "nivel": "Plenor",
+      "nascimento": "",
+      "pretencao": "",
+      "vaga": "Analista de Dados",
+      "descri": "",
+      "sql": "",
+      "lg": "",
+      "en": "",
+      "id": 2,
+      "softSkills": "funalo",
+      "hardSkills": "sasdsdassa",
+      "salario": "Junior",
+      "status": "Inapto"
+    }
+  ],
+  "vagas": [
+    {
+      "nomeVaga": "teste 5",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-14",
+      "descricaoVaga": "",
+      "idioma": "",
+      "skillTecnica": "",
+      "id": 5
+    },
+    {
+      "nomeVaga": "testeeeee",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-02",
+      "descricaoVaga": "",
+      "idioma": "Francês",
+      "skillTecnica": "",
+      "id": 6
+    },
+    {
+      "nomeVaga": "Igor vinicius da silva Nascimento",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-22",
+      "descricaoVaga": "",
+      "idioma": "",
+      "skillTecnica": "",
+      "id": 7
+    },
+    {
+      "nomeVaga": "criar vaga",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-10",
+      "descricaoVaga": "",
+      "idioma": "",
+      "skillTecnica": "",
+      "id": 8
+    },
+    {
+      "nomeVaga": "Igor vinicius da silva Nascimento",
+      "localidade": "Recife",
+      "tempoAlocacao": "",
+      "descricaoVaga": "",
+      "idioma": "",
+      "skillTecnica": "",
+      "id": 9
+    },
+    {
+      "nomeVaga": "Igor vinicius da silva Nascimento",
+      "localidade": "Recife",
+      "tempoAlocacao": "",
+      "descricaoVaga": "",
+      "idioma": "",
+      "skillTecnica": "",
+      "id": 10
+    }
+  ]
+}

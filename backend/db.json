@@ -1,0 +1,183 @@
+{
+  "candidatos": [
+    {
+      "nome": "Igor vinicius da silva Nascimento",
+      "email": "diegoigor2001@gmail.com",
+      "dataEntrevista": "2022-11-27T12:58",
+      "numero1": "",
+      "numero2": "81 984783558",
+      "pais": "Brasil",
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "Ibura",
+      "nivel": "CL11",
+      "nascimento": "2001-02-26",
+      "pretencao": "",
+      "vaga": "Programador Backend",
+      "descri": "",
+      "sql": "",
+      "lg": "",
+      "en": "",
+      "skillTecnica": [
+        "Angular",
+        "java",
+        "css",
+        "html",
+        "TypeScript"
+      ],
+      "id": 1,
+      "salario": "CL11",
+      "status": "Contratado"
+    },
+    {
+      "nome": "Ruan Lucena",
+      "email": "diegoigor2001@gmail.com",
+      "dataEntrevista": "2022-11-28T08:31",
+      "numero1": "",
+      "numero2": "",
+      "pais": "Brasil",
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "",
+      "nivel": "",
+      "nascimento": "",
+      "pretencao": "",
+      "vaga": "Programador Web..",
+      "descri": "",
+      "sql": "",
+      "lg": "",
+      "en": "",
+      "skillTecnica": [
+        "Html",
+        "css",
+        "js",
+        "sql"
+      ],
+      "id": 2,
+      "salario": "CL11",
+      "status": "Contratado"
+    },
+    {
+      "nome": "Lucas ",
+      "email": "diegoigor2001@gmail.com",
+      "dataEntrevista": "2022-11-28T08:32",
+      "numero1": "",
+      "numero2": "",
+      "pais": "Brasil",
+      "estado": "PE",
+      "cidade": "Recife",
+      "bairro": "",
+      "nivel": "CL11",
+      "nascimento": "",
+      "pretencao": "",
+      "vaga": "Programador Frontend",
+      "descri": "",
+      "sql": "",
+      "lg": "",
+      "en": "",
+      "skillTecnica": [
+        "html",
+        "css",
+        "js"
+      ],
+      "id": 3,
+      "salario": "CL11",
+      "status": "Contratado"
+    },
+    {
+      "nome": "Klaiven",
+      "email": "",
+      "dataEntrevista": "2022-11-28T08:33",
+      "numero1": "",
+      "numero2": "",
+      "pais": "",
+      "estado": "",
+      "cidade": "",
+      "bairro": "",
+      "nivel": "CL11",
+      "nascimento": "",
+      "pretencao": "",
+      "vaga": "",
+      "descri": "",
+      "sql": "",
+      "lg": "",
+      "en": "",
+      "skillTecnica": [
+        "html",
+        "css",
+        "js",
+        "figma"
+      ],
+      "id": 4,
+      "salario": "CL11",
+      "status": "Contratado"
+    }
+  ],
+  "vagas": [
+    {
+      "nomeVaga": "Desenvolvedor Java",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-28",
+      "descricaoVaga": "",
+      "idioma": "Inglês",
+      "skillTecnica": [
+        "java",
+        "html",
+        "css",
+        "Js",
+        "angular"
+      ],
+      "id": 1
+    },
+    {
+      "nomeVaga": "Desenvolvedor Web",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-28",
+      "descricaoVaga": "",
+      "idioma": "Inglês",
+      "skillTecnica": [
+        "Html",
+        "css",
+        "Js",
+        "Figma",
+        "ux",
+        "ui"
+      ],
+      "id": 2
+    },
+    {
+      "nomeVaga": "Analista de Banco de Dados",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-28",
+      "descricaoVaga": "",
+      "idioma": "Inglês",
+      "skillTecnica": [
+        "Sql",
+        "mySql",
+        "MariaBD",
+        "Plsql"
+      ],
+      "id": 3
+    },
+    {
+      "nomeVaga": "Full Stack",
+      "localidade": "Recife",
+      "tempoAlocacao": "2022-11-28",
+      "descricaoVaga": "",
+      "idioma": "Inglês",
+      "skillTecnica": [
+        "angular",
+        "java",
+        "tyScript",
+        "html",
+        "css"
+      ],
+      "id": 4
+    }
+  ],
+  "tecnica": [
+    {
+      "tecnica": "java"
+    }
+  ]
+}

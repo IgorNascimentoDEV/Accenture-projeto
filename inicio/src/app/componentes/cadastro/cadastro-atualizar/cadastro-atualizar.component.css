@@ -1,0 +1,105 @@
+* {
+  padding: 5px 10px 1rem 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.caixa {
+  height: 80vh;
+  margin: 0 1% 0 1%;
+}
+
+.DivParaNomeCompleto {
+  width: 45%;
+  margin-right: 4%;
+  margin-left: 2%;
+}
+
+.DivParaEmail {
+  width: 45%;
+}
+
+.DivParaEndereco {
+  width: 45%;
+  margin-right: 4%;
+  margin-left: 2%;
+  padding-bottom: 1%;
+}
+
+.DivTelefone {
+  width: 45%;
+  margin-right: 3%;
+  padding-bottom: 1%;
+}
+
+.DivNascimento {
+  width: 45%;
+  margin-left: 2%;
+}
+
+.DivSalario {
+
+  width: 45%;
+  margin-left: 4%;
+  padding-bottom: 1%;
+}
+
+.NotasEntrada {
+  width: 45%;
+  margin-left: 2%;
+  margin-right: 4%;
+  padding-bottom: 2%;
+}
+
+.DescricaoCandidato {
+  width: 45%;
+}
+
+.boxEntrada {
+  margin-top: 2%;
+  padding: 1%;
+  box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.BtnCadastrarCancelar{
+  display: flex;
+  justify-content: flex-end;
+  
+  margin-left: 47%;
+  width: 50%;
+}
+
+label {
+  color: #000000;
+}
+
+p {
+  color: black;
+}
+
+button{
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width:500px) {
+  .caixa{
+    width: 32vh;
+    margin: 0 1% 0 3%;
+   
+  }
+  .DivTelefone, .DivSalario, .DivParaNomeCompleto,.DivParaEndereco,.DivParaEmail,.DivNascimento,.DescricaoCandidato,.NotasEntrada {
+    width: 100%;
+  }
+
+  .boxEntrada {
+    margin-top:10px;
+    margin-bottom: 10px;
+  
+  }
+  
+  
+}
